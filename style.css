@@ -20,7 +20,7 @@ body {
 	color: #eee;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .site {
 	font-family: Georgia, "Lucida Sans Unicode",lucida, serif;
 	font-weight: bold;
 }
@@ -131,6 +131,7 @@ textarea {
 
 #y-foot {
 	clear: both;
+	overflow: hidden;
 }
 
 
@@ -185,7 +186,7 @@ textarea {
 	text-decoration: none;
 }
 
-.site:hover, .site:active {
+#y-head .site:hover, #y-head .site:active {
 	text-decoration: underline;
 } 
 
@@ -365,5 +366,9 @@ textarea {
 	color: #999;
 	padding: 0.5em 10px;
 	text-align: right;
+}
+
+#y-foot p {
+	float: left;
 }
 
