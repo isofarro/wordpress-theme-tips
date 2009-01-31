@@ -5,7 +5,7 @@
 	<title><?php 
 		bloginfo('name'); 
 		if ( is_single() ) { 
-			echo ' - Blog Archive ';
+			echo ' - ';
 		}
 		wp_title(); 
 	?></title>

@@ -49,6 +49,17 @@
 	</div>
 	
 	<?php endif; ?>
+	
+	<?php if ( is_paged() ): ?>
+	<div class="mod navigation">
+		<div class="hd"></div>
+		<div class="bd">
+			<div class="nav-prev"><?php next_posts_link('Previous Entries') ?></div>
+			<div class="nav-next"><?php previous_posts_link('Next Entries') ?></div>
+		</div>
+		<div class="ft"></div>
+	</div>
+	<?php endif; ?>
 
 </div>
 
