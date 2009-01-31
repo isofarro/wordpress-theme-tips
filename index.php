@@ -10,15 +10,22 @@
 			
 	<div class="mod entry">
 		<div class="hd">
+			<?php if ( is_singular() ): ?>
+			<h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
+			<?php else: ?>
 			<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-			<span class="published">By <em><?php the_author() ?></em> on <?php the_time('F jS, Y') ?></span>
+			<?php endif; ?>
+			<span class="published">By <em><?php the_author() ?></em> on 
+				<?php the_time('F jS, Y') ?>
+				<?php comments_number(' - No comments', ' - One comment', ' - % comments' );?>
+			</span>
 		</div>
 		<div class="bd">
 			<?php the_content('Read the rest of this entry'); ?>
 		</div>
 		<div class="ft">
 			<span class="filedto">Filed in <?php the_category(', ') ?> <?php edit_post_link('Edit', ' | ', ''); ?></span>
-			<span class="postedby">Tagged with #TODO</span>
+			<?php the_tags('<span class="postedby">Tagged with ', ', ', '</span>'); ?>
 		</div>
 	</div>
 
