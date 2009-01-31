@@ -20,12 +20,6 @@
 		<div class="ft"></div>
 	</div>
 
-	<div class="mod">
-		<h2 class="hd">Blogroll #TODO</h2>
-		<ul class="bd">
-			<?php get_links_list(); ?>
-		</ul>
-		<div class="ft"></div>
-	</div>
+	<?php wp_list_bookmarks('title_before=<h2 class="hd">&title_after=</h2><div class="bd">&category_before=<div class="mod">&category_after=</div><div class="ft"></div></div>'); ?>
 
 </div>
