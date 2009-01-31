@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Tips Blog Network template</title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+
+</head>
+<body class="site-3">
+	<ul id="y-network">
+		<li class="site-1"><a href="/">Tips Network</a></li>		
+		<li class="site-2"><a href="http://www.accessibilitytips.com/">Accessibility</a></li>		
+		<li class="site-3"><a href="http://www.internationalisationtips.com/">Internationalisation</a></li>		
+		<li class="site-4"><a href="http://www.webstandardstips.com/">Web Standards</a></li>		
+	</ul>
+	<div id="y-page">
+		<div id="y-head">
+			<h1>Tips Blog Network</h1>
+			<p>Practical web development advice</p>
+		</div>
+		<!--
+		<div id="y-banner">banner</div>
+		-->
+		<div id="y-content">
+<!-- start of main content -->
+
+<div class="mod entry">
+	<div class="hd">
+		<h2><a href="http://www.wp-dev.isolutia.com/?p=3">Easy clearing of floats</a></h2>
+		<span class="published">By <em>Isofarro</em> on January 31st, 2009</span>
+	</div>
+	<div class="bd">
+		<p>One of the main methods of creating stable layouts is to ensure that elements that contain floated elements clear these floats.</p>
+		<p>Given an element with an id of wrapper, the styles needed to easy clear any contained floats is:</p>
+		<pre><code>
+#wrapper:after {
+ content: ".";
+ display: block;
+ height: 0;
+ clear: both;
+ visibility: hidden;
+}
+#wrapper { zoom: 1; }
+		</code></pre>
+
+		<p>The <code>:after</code> selector deals with most modern browsers, so Firefox, Safari, Opera (the ones listed as Grade A browsers in Yahoo!&#8217;s <a href="http://developer.yahoo.com/yui/articles/gbs/#gbschart">Graded Browser Support</a> chart). Internet Explorer 6 and 7 ignore this rule, so the second stylerule, the <code>zoom: 1</code> triggers <code>hasLayout</code> in IE6 and 7 which does the self-clearing of floats.</p>
+		<p>If valid CSS is an absolute and non-negotiable requirement, then <code>zoom: 1</code> is going to be a problem. So instead you could replace the <code>zoom:1</code> selector rule with another style-rule that triggers hasLayout in IE, like <code>height: 0%</code>, or <code>overflow: hidden</code> - pick your poison.</p>
+		
+		<h2>A second level header</h2>
+
+		<p>The <code>:after</code> selector deals with most modern browsers, so Firefox, Safari, Opera (the ones listed as Grade A browsers in Yahoo!&#8217;s <a href="http://developer.yahoo.com/yui/articles/gbs/#gbschart">Graded Browser Support</a> chart). Internet Explorer 6 and 7 ignore this rule, so the second stylerule, the <code>zoom: 1</code> triggers <code>hasLayout</code> in IE6 and 7 which does the self-clearing of floats.</p>
+	
+		<h3>A third level heading</h3>
+		
+		<p>If valid CSS is an absolute and non-negotiable requirement, then <code>zoom: 1</code> is going to be a problem. So instead you could replace the <code>zoom:1</code> selector rule with another style-rule that triggers hasLayout in IE, like <code>height: 0%</code>, or <code>overflow: hidden</code> - pick your poison.</p>
+		<h2>A second level header</h2>
+		<h3>A third level heading</h3>
+		<h4>A fourth level heading</h4>
+		<h5>A fifth level heading</h5>
+		<h6>A sixth level heading</h6>
+		<p>The <code>:after</code> selector deals with most modern browsers, so Firefox, Safari, Opera (the ones listed as Grade A browsers in Yahoo!&#8217;s <a href="http://developer.yahoo.com/yui/articles/gbs/#gbschart">Graded Browser Support</a> chart). Internet Explorer 6 and 7 ignore this rule, so the second stylerule, the <code>zoom: 1</code> triggers <code>hasLayout</code> in IE6 and 7 which does the self-clearing of floats.</p>
+		<p>If valid CSS is an absolute and non-negotiable requirement, then <code>zoom: 1</code> is going to be a problem. So instead you could replace the <code>zoom:1</code> selector rule with another style-rule that triggers hasLayout in IE, like <code>height: 0%</code>, or <code>overflow: hidden</code> - pick your poison.</p>
+	</div>
+	<div class="ft">
+		<span class="filedto">Filed in <a href="http://www.wp-dev.isolutia.com/?cat=1" title="View all posts in> Uncategorized" rel="category">Uncategorized</a>  | <a href="http://www.wp-dev.isolutia.com/wp-admin/post.php?action=edit&amp;post=3" title="Edit post">Edit</a></span>
+		<span class="postedby">Tagged with <a href="#tag1">tag 1</a>, <a href="#tag2">tag 2</a>, <a href="#tag3">tag 3</a>, <a href="#tag4">tag 4</a>, <a href="#tag5">tag 5</a>, <a href="#tag6">tag 6</a>, <a href="#tag7">tag 7</a>, <a href="#tag8">tag 8</a></span>
+	</div>
+</div>
+
+
+<div class="mod comments">
+	<h3 class="hd" id="comments">2 Responses to &#8220;Easy clearing of floats&#8221;</h3>
+	<ol class="bd commentlist">
+		<li class="mod alt" id="comment-2">
+			<div class="hd">
+				<em>1.</em> 
+				<span class="author"><cite><a href='http://www.isolani.co.uk/' rel='external nofollow' class='url'>Isofarro</a></cite> says:</span>
+				<span class="meta"><a href="#comment-2">January 31st, 2009 at 3:15 am</a> (<a href="http://www.wp-dev.isolutia.com/wp-admin/comment.php?action=editcomment&amp;c=2" title="Edit comment">edit</a>)</span>
+			</div>
+			<div class="bd">
+				<p>David, yes, the CSS is invalid, yet the practical benefits of this technique far outweights the costs of it. And while we are stuck with Internet Explorer 6 and 7, we are stuck in a world where CSS isn’t as well supported in browsers as we’d like or expect.</p>
+				<p>Hence the tag line of site begins with “Practical advice”, rather than “Specification perfect”, our sites live and die on the Web with the browsers that our visitors use. There are times when validation needs to be broken for practical, and even accessibility considerations.</p>
+			</div>
+			<div class="ft"></div>
+		</li>
+		<li class="mod " id="comment-3">
+			<div class="hd">
+				<em>2.</em>
+				<span class="author"><cite><a href='http://www.isolani.co.uk/' rel='external nofollow' class='url'>Isofarro</a></cite> says:</span>
+				<span class="meta"><a href="#comment-3">January 31st, 2009 at 3:16 am</a> (<a href="http://www.wp-dev.isolutia.com/wp-admin/comment.php?action=editcomment&amp;c=3" title="Edit comment">edit</a>)</span>
+			</div>
+			<div class="bd">
+				<p>Folks, it’s worth remembering that if “star” hacks (or any other hacks) are put inside an IE-only stylesheet, and referenced via conditional comments in the mark-up, the issue of compliancy does not apply. They are effectively off the radar.</p>
+<p>And remember too that the “star” selector actually validates correctly against the w3c css 2.1 standard.</p>
+			</div>
+			<div class="ft"></div>
+		</li>
+	</ol>
+	<div class="ft"></div>
+</div>
+
+
+<div class="mod reply">
+	<h3 class="hd" id="respond">Add a comment or reply</h3>
+	<div class="bd">
+		<span>Logged in as <a href="http://www.wp-dev.isolutia.com/wp-admin/profile.php">Isofarro</a>. (<a href="http://www.wp-dev.isolutia.com/wp-login.php?action=logout">Logout</a>)</span>
+		<form action="http://www.wp-dev.isolutia.com/wp-comments-post.php" method="post" id="commentform">
+			
+			<div>
+				<label for="comment">Comment</label><br />
+				<textarea name="comment" id="comment" cols="100%" rows="10"></textarea>
+			</div>
+			<div>
+				<input name="submit" type="submit" id="submit" value="Submit Comment" />
+				<input type="hidden" name="comment_post_ID" value="3" />
+			</div>
+			<input type="hidden" id="_wp_unfiltered_html_comment" name="_wp_unfiltered_html_comment" value="269991524f" />
+		</form>
+	</div>
+	<div class="ft"></div>
+</div>
+
+<!-- end of main content -->		
+		</div>
+		<div id="y-related">
+<!-- Start of related content -->
+
+<div class="mod">
+	<h2 class="hd">Pages</h2>
+	<ul class="bd">
+		<li><a href="http://www.wp-dev.isolutia.com/">Home</a></li>
+		<li class="page_item page-item-2"><a href="http://www.wp-dev.isolutia.com/?page_id=2" title="About">About</a></li>
+	</ul>
+	<div class="ft"></div>
+</div>
+
+<div class="mod">
+	<h2 class="hd">Categories</h2>
+	<ul class="bd">
+		<li class="cat-item cat-item-1"><a href="http://www.wp-dev.isolutia.com/?cat=1" title="View all posts filed under Uncategorized">Uncategorized</a> (2)</li>
+	</ul>
+	<div class="ft"></div>
+</div>
+
+<div class="mod">
+	<h2 class="hd">Blogroll</h2>
+	<ul class="bd">
+		<li><a href="http://wordpress.org/development/">Development Blog</a></li>
+		<li><a href="http://codex.wordpress.org/">Documentation</a></li>
+		<li><a href="http://wordpress.org/extend/plugins/">Plugins</a></li>
+		<li><a href="http://wordpress.org/extend/ideas/">Suggest Ideas</a></li>
+		<li><a href="http://wordpress.org/support/">Support Forum</a></li>
+		<li><a href="http://wordpress.org/extend/themes/">Themes</a></li>
+		<li><a href="http://planet.wordpress.org/">WordPress Planet</a></li>
+	</ul>
+	<div class="ft"></div>
+</div>
+
+<!-- End of related content -->		
+		</div>
+		<div id="y-foot">Copyright &copy; 2007 - 2009, <a href="http://www.isolani.co.uk>isolani</a></div>
+	</div>
+</body>
+</html>

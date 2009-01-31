@@ -1,0 +1,369 @@
+/*  
+Theme Name: Tips Network
+Theme URI: http://www.isolani.co.uk/
+Description: A clean blog-network theme
+Version: 0.1
+Author: Isofarro
+Author URI: http://www.isolani.co.uk/
+*/
+
+/*reset.css*/body{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup,sub{line-height:-1px;vertical-align:text-top;}sub{vertical-align:text-bottom;}input, textarea, select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+/*fonts.css*/body {font:13px/1.22 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}table {font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:99%;}
+
+/****************************************************************************
+*
+* Base styles
+*
+****************************************************************************/
+body {
+	background: #888 url(images/bg.gif);
+	color: #eee;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 200%;
+}
+
+h3 {
+	font-size: 180%;
+}
+
+h4 {
+	font-size: 160%;
+}
+h5 {
+	font-size: 140%;
+}
+h6 {
+	font-size: 125%;
+}
+
+
+a {
+	color: #557799;
+}
+
+p {
+	margin: 0.5em 0;
+}
+
+pre {
+	margin-bottom: 1em;
+	line-height: 1.4;
+	padding: 0 1em;
+}
+
+em {
+	font-weight: bold;
+}
+
+p code {
+	color: #222;
+}
+
+textarea {
+	width: 95%;
+}
+
+
+/****************************************************************************
+*
+* Page layout
+*
+****************************************************************************/
+
+#y-network {
+	width: 950px;
+	margin: 10px auto 0 auto;
+	/* overflow: hidden; */
+	padding: 0 10px;
+	color: #4e4e4e;
+	position: relative; bottom: -1px;
+	border-bottom: 1px solid transparent;
+}
+
+#y-page {
+	background: #fff;
+	color: #4e4e4e;
+	width: 970px;
+	margin: 0 auto 10px auto;
+	overflow: hidden;
+	border: 1px solid #999;
+	border-width: 1px 1px 0 1px;
+}
+
+#y-head {
+	padding: 16px 10px 20px 10px;
+	/* height: 96px; */
+}
+
+#y-banner {
+	/* background: #ddd; */
+	float: left;
+	width: 950px;
+	margin: 0 10px;
+}
+
+#y-content {
+	clear: both;
+	float: left;
+	width: 640px;
+	margin: 0 10px 10px 0;
+	padding: 10px 0 0 10px;
+	
+	border-top: 16px solid #1671a8;
+}
+
+#y-related {
+	/* background: #eee; */
+	float: left;
+	width: 290px;
+	margin-bottom: 10px;
+
+	border-top: 16px solid #9dbc32;
+	padding: 10px 10px 0 10px;
+}
+
+#y-foot {
+	clear: both;
+}
+
+
+/****************************************************************************
+*
+* Network tabs
+*
+****************************************************************************/
+
+#y-network li {
+	background: transparent url(images/network.gif) no-repeat scroll left -60px;
+	float: left;
+	margin: 0 4px 0 0;
+	padding: 0 0 0 3px;
+}
+
+#y-network a {
+	background: transparent url(images/network.gif) no-repeat scroll right -60px;
+	color: #666;
+	display: block;
+	font-weight: bold;
+	padding: 5px 15px 4px 12px;
+	text-decoration: none;
+}
+
+.site-1 #y-network .site-1,
+.site-2 #y-network .site-2,
+.site-3 #y-network .site-3 {
+	background: transparent url(images/network.gif) no-repeat scroll left -294px;
+}
+
+.site-1 #y-network .site-1 a,
+.site-2 #y-network .site-2 a,
+.site-3 #y-network .site-3 a {
+	background: transparent url(images/network.gif) no-repeat scroll right -294px;
+	padding: 6px 15px 4px 12px;
+}
+
+
+/****************************************************************************
+*
+* Header styles
+*
+****************************************************************************/
+
+#y-head h1, #y-head .site {
+	font-size: 3em;
+}
+
+#y-head .site {
+	display: block;
+	text-decoration: none;
+}
+
+.site:hover, .site:active {
+	text-decoration: underline;
+} 
+
+#y-head p {
+	margin: -3px 0 0 0;
+	color: #777;
+}
+
+/**********************************************************************
+*
+* .mod styles
+*
+**********************************************************************/
+
+.mod {
+	margin-bottom: 10px;
+}
+
+#y-content .mod {
+	margin-bottom: 20px;
+	margin-right: 10px;
+}
+
+#y-content .mod h1, 
+#y-content .mod .hd h2 {
+	font-size: 250%;
+}
+
+#y-content .mod h1 a,
+#y-content .mod .hd h2 a {
+	color: #57932B;
+	text-decoration: none;
+}
+
+#y-content .mod .bd {
+	font-size: 116%;
+	line-height: 1.4;
+}
+
+#y-content .mod .mod .bd {
+	font-size: 100%;
+}
+
+
+/**********************************************************************
+*
+* .entry styles
+*
+**********************************************************************/
+
+.entry .published {
+	color: #777;
+	line-height: 1;
+	display: block;
+	margin-top: -2px;
+}
+
+.entry .hd, .entry .ft {
+	border-bottom: 1px dotted #ccc;
+}
+
+.entry .bd {
+	padding: 0.5em 0;
+}
+
+.entry .ft {
+	background: #eef;
+	padding: 2px 0;
+}
+
+.entry .postedby {
+	display: block;
+	background: transparent url(images/user.gif) no-repeat scroll 0 0;
+	padding: 3px 3px 3px 20px;
+	margin: 2px;
+}
+
+.entry .filedto {
+	display: block;
+	background: transparent url(images/post.gif) no-repeat scroll 0 0;
+	padding: 1px 3px 3px 20px;
+	margin: 2px;
+}
+
+/**********************************************************************
+*
+* .comment styles
+*
+**********************************************************************/
+
+.comments h3.hd {
+	font-size: 1.2em;
+}
+
+.comments .hd {
+	border-bottom: 1px dotted #ccc;
+	margin-bottom: 1em;
+}
+
+.comments .mod .hd {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+
+.commentlist .hd {
+	font-size: 0.9em;
+}
+
+.commentlist .bd p {
+	margin: 0.2 0 0.8em 0;
+}
+
+.comments {
+	border-bottom: 1px dotted #ccc;
+}
+
+/**********************************************************************
+*
+* .reply styles
+*
+**********************************************************************/
+
+.reply h3.hd {
+	font-size: 1.4em;
+}
+
+
+
+/**********************************************************************
+*
+* sidebar styles
+*
+**********************************************************************/
+
+#y-related {
+	padding-top: 17px;
+}
+
+#y-related a {
+	text-decoration: none;
+}
+
+#y-related a:focus, #y-related a:hover, #y-related a:active {
+	text-decoration: underline;
+}
+
+#y-related h2, #y-related h3, #y-related h4 {
+	font-family: Tahoma,Verdana,Arial,Helvetica,sans-serif;
+}
+
+#y-related h2 {
+	padding: 0;
+	font-size: 1.2em;
+}
+
+#y-related li {
+	border-bottom: 1px dotted #ddd;
+	margin-bottom: 5px;
+	padding: 5px 10px;
+}
+
+/**********************************************************************
+*
+* footer styles
+*
+**********************************************************************/
+
+#y-foot a {
+	color: #557799;
+	text-decoration: none;
+}
+
+
+#y-foot {
+	background: #444 none repeat scroll 0 0;
+	border-top: 1px solid #777777;
+	color: #999;
+	padding: 0.5em 10px;
+	text-align: right;
+}
+
