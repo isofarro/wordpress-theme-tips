@@ -19,4 +19,5 @@ To-do list:
 * Add a tagcloud page
 * Dynamically map the network tabs based on the site
 * Cross linking/article summaries between the sites
+* Test and repair the next/previous navigation buttons
 
