@@ -10,8 +10,7 @@
 		</ul>
 		<div class="ft"></div>
 	</div>
-
-
+	
 	<div class="mod">
 		<h2 class="hd">Categories</h2>
 		<ul class="bd">

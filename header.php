@@ -31,4 +31,7 @@
 			<?php endif; ?>
 			<p><?php bloginfo('description'); ?></p>
 		</div>
+		<div id="y-search">		
+			<?php get_search_form(); ?>
+		</div>
 	
