@@ -15,9 +15,10 @@ To-do list:
 -----------
 
 * Add archive list to the sidebar
-* Add introductions to Categories and Tag pages
+* Add introductions to Categories, Tag and Search pages
 * Add a tagcloud page
 * Dynamically map the network tabs based on the site
 * Cross linking/article summaries between the sites
 * Test and repair the next/previous navigation buttons
+* clean up transparency on the tab images
 
