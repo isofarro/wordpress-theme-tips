@@ -3,11 +3,8 @@
 <head>
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 	<title><?php 
+		wp_title(' &mdash; ', true, 'right'); 
 		bloginfo('name'); 
-		if ( is_single() ) { 
-			echo ' - ';
-		}
-		wp_title(); 
 	?></title>
 	<meta name="generatorX" content="WordPress <?php bloginfo('version'); ?>"/> <!-- leave this for stats -->
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
@@ -15,7 +12,23 @@
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	<?php wp_head(); ?>
 </head>
-<body class="site-1">
+<?php
+	$sites = array(
+		'www.frontendtips.com' 					=> 'site-1',
+		'www.accessibilitytips.com' 			=> 'site-2',
+		'www.internationalisationtips.com' 	=> 'site-3',
+		'www.webstandardstips.com' 			=> 'site-4'
+	);
+
+	$url    = get_bloginfo('url');
+	$domain = parse_url($url, PHP_URL_HOST);
+	
+	$site = 'site-2';
+	if ($domain && !empty($sites[$domain])) {
+		$site = $sites[$domain];
+	}
+?>
+<body class="<?php echo $site; ?>">
 	<ul id="y-network">
 		<li class="site-1"><a href="http://www.frontendtips.com/">Frontend</a></li>		
 		<li class="site-2"><a href="http://www.accessibilitytips.com/">Accessibility</a></li>		
