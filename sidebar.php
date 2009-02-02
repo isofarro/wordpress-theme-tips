@@ -18,6 +18,16 @@
 		</ul>
 		<div class="ft"></div>
 	</div>
+	
+	<div class="mod">
+		<h2 class="hd">Archives</h2>
+		<ul class="bd">
+			<?php wp_get_archives('type=monthly'); ?>
+		</ul>
+		<div class="ft"></div>
+	</div>
+	
+	
 
 	<?php wp_list_bookmarks('title_before=<h2 class="hd">&title_after=</h2><div class="bd">&category_before=<div class="mod">&category_after=</div><div class="ft"></div></div>'); ?>
 
