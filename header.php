@@ -17,7 +17,7 @@
 </head>
 <body class="site-1">
 	<ul id="y-network">
-		<li class="site-1"><a href="/">Tips Network</a></li>		
+		<li class="site-1"><a href="http://www.frontendtips.com/">Frontend</a></li>		
 		<li class="site-2"><a href="http://www.accessibilitytips.com/">Accessibility</a></li>		
 		<li class="site-3"><a href="http://www.internationalisationtips.com/">Internationalisation</a></li>		
 		<li class="site-4"><a href="http://www.webstandardstips.com/">Web Standards</a></li>		
