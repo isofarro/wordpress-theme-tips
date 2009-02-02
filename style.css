@@ -334,6 +334,10 @@ textarea {
 	padding-top: 17px;
 }
 
+#y-related .mod {
+	margin-bottom: 20px;
+}
+
 #y-related a {
 	text-decoration: none;
 }
