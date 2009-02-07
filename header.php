@@ -6,10 +6,8 @@
 		wp_title(' &mdash; ', true, 'right'); 
 		bloginfo('name'); 
 	?></title>
-	<meta name="generatorX" content="WordPress <?php bloginfo('version'); ?>"/> <!-- leave this for stats -->
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-	<link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> Atom Feed" href="<?php blog
-info('atom_url'); ?>" />	
+	<link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> Atom Feed" href="<?php bloginfo('atom_url'); ?>" />	
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	<?php wp_head(); ?>
 </head>

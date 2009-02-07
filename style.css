@@ -239,6 +239,22 @@ textarea {
 	font-size: 100%;
 }
 
+#y-content .mod .bd ul,
+#y-content .mod .bd ol {
+	margin: 1em 0;
+}
+#y-content .mod .bd ul li {
+	list-style: disc outside;
+}
+
+#y-content .mod .bd ol li {
+	list-style: decimal outside;
+}
+
+#y-content .mod .bd li {
+	margin-left: 1.5em;
+}
+
 
 /**********************************************************************
 *
@@ -248,9 +264,8 @@ textarea {
 
 .entry .published {
 	color: #777;
-	line-height: 1;
+	line-height: 1.22;
 	display: block;
-	margin-top: -2px;
 }
 
 .entry .hd, .entry .ft {
