@@ -48,6 +48,11 @@ a {
 	color: #557799;
 }
 
+a:hover, a:focus, a:active {
+	text-decoration: underline;
+}
+
+
 p {
 	margin: 1em 0;
 }
@@ -164,6 +169,12 @@ textarea {
 	font-weight: bold;
 	padding: 5px 15px 4px 12px;
 	text-decoration: none;
+}
+
+#y-network a:hover,
+#y-network a:focus,
+#y-network a:active {
+	text-decoration: underline;
 }
 
 .site-1 #y-network .site-1,
