@@ -77,14 +77,12 @@ textarea {
 *
 ****************************************************************************/
 
+
 #y-network {
 	width: 950px;
 	margin: 10px auto 0 auto;
+	/* Deliberately don't self-clear this container */
 	/* overflow: hidden; */
-	padding: 0 10px;
-	color: #4e4e4e;
-	position: relative; bottom: -1px;
-	border-bottom: 1px solid transparent;
 }
 
 #y-page {
@@ -95,6 +93,7 @@ textarea {
 	overflow: hidden;
 	border: 1px solid #999;
 	border-width: 1px 1px 0 1px;
+	clear: both;
 }
 
 #y-head {
@@ -150,10 +149,11 @@ textarea {
 *
 ****************************************************************************/
 
+
 #y-network li {
 	background: transparent url(images/network.gif) no-repeat scroll left -60px;
 	float: left;
-	margin: 0 4px 0 0;
+	margin: 5px 4px 0 0;
 	padding: 0 0 0 3px;
 }
 
@@ -168,15 +168,28 @@ textarea {
 
 .site-1 #y-network .site-1,
 .site-2 #y-network .site-2,
-.site-3 #y-network .site-3 {
+.site-3 #y-network .site-3, 
+.site-4 #y-network .site-4, 
+.site-5 #y-network .site-5, 
+.site-6 #y-network .site-6, 
+.site-7 #y-network .site-7, 
+.site-8 #y-network .site-8 {
 	background: transparent url(images/network.gif) no-repeat scroll left -294px;
+	position: relative;
+	top: 1px;
+	margin-top: 0;
 }
 
 .site-1 #y-network .site-1 a,
 .site-2 #y-network .site-2 a,
-.site-3 #y-network .site-3 a {
+.site-3 #y-network .site-3 a,
+.site-4 #y-network .site-4 a,
+.site-5 #y-network .site-5 a,
+.site-6 #y-network .site-6 a,
+.site-7 #y-network .site-7 a,
+.site-8 #y-network .site-8 a {
 	background: transparent url(images/network.gif) no-repeat scroll right -294px;
-	padding: 6px 15px 4px 12px;
+	padding: 8px 15px 6px 12px;
 }
 
 
